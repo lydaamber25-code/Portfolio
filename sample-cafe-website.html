@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maple &amp; Bean Café | Fresh Coffee &amp; Baked Goods</title>
+<meta name="description" content="Maple &amp; Bean Café - locally roasted coffee, fresh pastries and a cozy spot to work or relax.">
+<style>
+:root{--brown:#4a2f1e;--cream:#faf4ea;--accent:#c9772b;--ink:#2b2018;--muted:#6f5d50}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:var(--cream);line-height:1.6}
+h1,h2,h3,nav,.btn,label,button{font-family:'Segoe UI',Arial,sans-serif}
+header{position:sticky;top:0;background:var(--brown);color:#fff;z-index:10}
+.bar{max-width:1050px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:14px 20px;flex-wrap:wrap;gap:8px}
+.logo{font-size:1.4rem;font-weight:700;letter-spacing:.5px}
+nav a{color:#f3e6d6;text-decoration:none;margin-left:20px;font-size:.95rem}
+nav a:hover{color:var(--accent)}
+.hero{background:linear-gradient(rgba(40,24,14,.65),rgba(40,24,14,.65)),linear-gradient(135deg,#7a4a2a,#c9772b);color:#fff;text-align:center;padding:110px 20px}
+.hero h1{font-size:clamp(2rem,6vw,3.4rem);margin-bottom:14px}
+.hero p{max-width:560px;margin:0 auto 28px;font-size:1.15rem}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:13px 28px;border-radius:30px;text-decoration:none;font-weight:600;border:0;cursor:pointer;font-size:1rem}
+.btn:hover{background:#a85f1d}
+section{max-width:1050px;margin:auto;padding:70px 20px}
+h2{font-size:2rem;color:var(--brown);margin-bottom:10px;text-align:center}
+.sub{text-align:center;color:var(--muted);margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.card{background:#fff;border-radius:14px;padding:26px;box-shadow:0 3px 14px rgba(74,47,30,.09)}
+.card h3{color:var(--brown);margin-bottom:6px}
+.price{color:var(--accent);font-weight:700;font-family:'Segoe UI',Arial,sans-serif}
+.item{display:flex;justify-content:space-between;border-bottom:1px dashed #d8c8b4;padding:8px 0}
+.alt{background:#f1e6d4;max-width:none}
+.alt>div{max-width:1050px;margin:auto}
+.hours li{list-style:none;display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #eadfcc}
+form{display:grid;gap:14px;max-width:520px;margin:auto}
+input,textarea{width:100%;padding:12px;border:1px solid #cdb9a2;border-radius:8px;font:inherit;background:#fff}
+label{font-weight:600;font-size:.9rem}
+footer{background:var(--brown);color:#e9d9c5;text-align:center;padding:30px 20px;font-family:'Segoe UI',Arial,sans-serif;font-size:.9rem}
+#msg{text-align:center;color:#2e7d32;font-family:'Segoe UI',Arial,sans-serif;font-weight:600}
+</style>
+</head>
+<body>
+<header><div class="bar"><div class="logo">☕ Maple &amp; Bean</div>
+<nav><a href="#menu">Menu</a><a href="#about">About</a><a href="#visit">Visit</a><a href="#contact">Contact</a></nav></div></header>
+
+<div class="hero">
+<h1>Your cozy corner for great coffee</h1>
+<p>Locally roasted beans, pastries baked every morning, and a warm seat waiting for you.</p>
+<a class="btn" href="#menu">See Our Menu</a>
+</div>
+
+<section id="menu">
+<h2>Our Menu</h2><p class="sub">Made fresh daily. Dairy-free and vegan options available.</p>
+<div class="grid">
+<div class="card"><h3>Coffee</h3>
+<div class="item"><span>Drip Coffee</span><span class="price">$3.00</span></div>
+<div class="item"><span>Latte</span><span class="price">$4.75</span></div>
+<div class="item"><span>Cappuccino</span><span class="price">$4.50</span></div>
+<div class="item"><span>Cold Brew</span><span class="price">$4.25</span></div></div>
+<div class="card"><h3>Baked Goods</h3>
+<div class="item"><span>Butter Croissant</span><span class="price">$3.50</span></div>
+<div class="item"><span>Blueberry Muffin</span><span class="price">$3.25</span></div>
+<div class="item"><span>Cinnamon Roll</span><span class="price">$4.00</span></div>
+<div class="item"><span>Banana Bread</span><span class="price">$3.75</span></div></div>
+<div class="card"><h3>Light Bites</h3>
+<div class="item"><span>Avocado Toast</span><span class="price">$8.50</span></div>
+<div class="item"><span>Turkey Pesto Panini</span><span class="price">$9.75</span></div>
+<div class="item"><span>Soup of the Day</span><span class="price">$6.50</span></div>
+<div class="item"><span>Garden Salad</span><span class="price">$7.50</span></div></div>
+</div>
+</section>
+
+<section class="alt" id="about"><div>
+<h2>Our Story</h2><p class="sub">A neighborhood café since 2015</p>
+<p style="max-width:700px;margin:auto;text-align:center">Maple &amp; Bean started with one small espresso machine and a big idea: great coffee should feel like home. We roast with local partners, bake in-house, and welcome everyone, whether you're grabbing a quick cup or settling in for the afternoon.</p>
+</div></section>
+
+<section>
+<h2>What Neighbors Say</h2><p class="sub">Sample reviews</p>
+<div class="grid">
+<div class="card">“Best latte in town and the croissants are unreal.”<br><strong>— Sarah M.</strong></div>
+<div class="card">“Friendly staff, fast Wi-Fi, perfect place to work.”<br><strong>— David R.</strong></div>
+<div class="card">“Our weekend breakfast spot. The cinnamon rolls are a must!”<br><strong>— Priya K.</strong></div>
+</div>
+</section>
+
+<section class="alt" id="visit"><div>
+<h2>Visit Us</h2><p class="sub">123 Main Street, Springfield · (555) 123-4567</p>
+<div class="grid">
+<div class="card"><h3>Hours</h3><ul class="hours">
+<li><span>Mon – Fri</span><span>6:30am – 6pm</span></li>
+<li><span>Saturday</span><span>7am – 5pm</span></li>
+<li><span>Sunday</span><span>8am – 3pm</span></li></ul></div>
+<div class="card"><h3>Find Us</h3><p>Right on Main Street, next to the Springfield Library. Free parking behind the building.</p><br><a class="btn" href="https://maps.google.com" target="_blank" rel="noopener">Get Directions</a></div>
+</div></div></section>
+
+<section id="contact">
+<h2>Say Hello</h2><p class="sub">Questions, catering or a custom cake order? Send us a note.</p>
+<form id="f">
+<div><label for="n">Name</label><input id="n" required></div>
+<div><label for="e">Email</label><input id="e" type="email" required></div>
+<div><label for="m">Message</label><textarea id="m" rows="4" required></textarea></div>
+<button class="btn" type="submit">Send Message</button>
+<p id="msg"></p>
+</form>
+</section>
+
+<footer>© 2026 Maple &amp; Bean Café · Sample website demo</footer>
+<script>
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();document.getElementById('msg').textContent='Thanks! (Demo form – connect to Formspree or Google Forms for real messages.)';this.reset();});
+</script>
+</body>
+</html>
